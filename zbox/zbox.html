@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>zbox demo page</title>
+    <link type="text/css" rel="stylesheet" media="all" href="jquery.zbox.css" />
+    <style>
+      body { font-family: sans-serif; font-size: 16px; }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.zbox.min.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      jQuery(document).ready(function(){
+        jQuery(".zb").zbox( { margin:40 } );
+      });
+      //]]>
+    </script>
+  </head>
+  <body>
+    <h1>zbox - lightbox and zoom</h1>
+    <p>A popup box to display images. For high res images, a magnifying lens lets you see more detail. If more than one image, a slideshow is created.</p>
+    <p>Click an image to see it in action.</p>
+    <div id="wrapper">
+      <a class="zb" rel="group" href="image1.jpg">
+        <img src="image1-sm.jpg"/>
+      </a>
+      <a class="zb" rel="group" href="image2.jpg">
+        <img src="image2-sm.jpg"/>
+      </a>
+    </div><!-- wrapper -->
+  </body>
+</html>
